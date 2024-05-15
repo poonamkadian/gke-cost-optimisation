@@ -16,7 +16,7 @@ GKE cost optimisation with Resources usage metrics.
 gcloud auth application-default login
 ```
 
-It will redirect to login into the browser and authenticate the user. After login credentials token will be copied to the local machine. Using this command, the user does not need a service account key for Terraform creation.
+This command redirects to browser login for user authentication. After login, the token is copied to the local machine, eliminating the need for a service account key for Terraform creation.
 
 2. Provide the cluster details into Terraform main.tf:
 - Project_id
@@ -28,13 +28,22 @@ It will redirect to login into the browser and authenticate the user. After logi
 - Subnet IP 
 
 3. Once the GKE cluster is ready, log in to the GKE cluster:
-- Click on Kubernetes Clusters in the GCP console -> click on connect -> copy GKE connect command -> enter this command into the local terminal.
+- Click on Kubernetes Clusters in the GCP console -> click on connect 
+
+ ![Alt Text](images/gke-connect.png)
+
+copy GKE connect command -> enter this command into the local terminal.
 ![Alt Text](images/copy-login-command.png)
 
 **or**
 
 
-- Log in to GCP cloud -> Enable cloud shell -> click on Clusters -> click on connect -> copy GKE connect command -> enter this command into GCP cloud shell.
+- Log in to GCP cloud -> Enable cloud shell
+![Alt Text](images/cloudshell.png)
+
+ click on Clusters -> click on connect 
+ 
+ copy GKE connect command -> enter this command into GCP cloud shell.
 ![Alt Text](images/connect-cloudshell.png)
 
 ### 2. Enable GKE Cost Allocation 

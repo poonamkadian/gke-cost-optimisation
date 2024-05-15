@@ -48,7 +48,7 @@ copy GKE connect command -> enter this command into the local terminal.
 
 4. Deploy Sample applications in GKE cluster
 
-[Refer these steps](Application_deployment.MD)
+[Refer these steps](Application_deployment.md)
 
 ### 2. Enable GKE Cost Allocation 
 

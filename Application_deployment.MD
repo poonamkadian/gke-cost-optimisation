@@ -19,11 +19,12 @@ cd microservices-demo
 kubectl apply -f ./release/kubernetes-manifests.yaml --namespace dev
 ```
 
-Wait until the load balancer exposes an External IP for the frontend-external service. You can monitor the service status using the following command:
+Wait until the load balancer exposes an External IP for the frontend-external service. The service status can seen using the following command:
 
 ```bash
 kubectl get svc -w --namespace dev
 ```
+![Alt Text](images/deployed-apps.png)
 
 Open http://<EXTERNAL_IP> in a new tab. The homepage of the Online Boutique application like this:
 
